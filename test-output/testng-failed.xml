@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [Jquery]">
-  <test thread-count="3" name="Run on Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.jqueryscript.Handle_Data_Table">
+      <class name="runner.CucumberTestRunner">
         <methods>
-          <include name="TC_01_Senkey_Edit_Remove"/>
-          <include name="TC_02_Pagenation_Jquery"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.jqueryscript.Handle_Data_Table -->
+      </class> <!-- runner.CucumberTestRunner -->
     </classes>
-  </test> <!-- Run on Firefox(failed) -->
-</suite> <!-- Failed suite [Jquery] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
