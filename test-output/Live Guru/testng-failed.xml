@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Live Guru]">
+  <test thread-count="3" parallel="tests" name="Run on Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.liveguru.user.Level_04_Multiple_Browser_Parallel">
+        <methods>
+          <include name="Register_01_Valid_Data"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.user.Level_04_Multiple_Browser_Parallel -->
+    </classes>
+  </test> <!-- Run on Edge(failed) -->
+</suite> <!-- Failed suite [Live Guru] -->
