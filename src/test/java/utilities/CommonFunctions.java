@@ -242,6 +242,7 @@ public class CommonFunctions {
 
 	public void sendkeys(By by, String text) {
 		DriverManager.getInstance().getDriver().findElement(by).sendKeys(text);
+		
 	}
 
 	public void pressKeys(By by, Keys key) {
