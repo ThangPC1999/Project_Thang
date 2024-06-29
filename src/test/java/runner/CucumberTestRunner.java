@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 //		"src/test/resources/features/functional/PostForSale.feature",
 //		"src/test/resources/features/functional/SetLocationWareHouse.feature",
 
-								"src/test/resources/features/regression/01_FlowBuyProduct.feature"
+								"src/test/resources/features/functional/22_Test.feature"
 
 //		 src/test/resources/features/test.feature
 

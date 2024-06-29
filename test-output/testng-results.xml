@@ -2,56 +2,76 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T18:25:43 ICT" name="Default suite" finished-at="2023-08-18T18:30:43 ICT" duration-ms="300441">
+  <suite started-at="2024-06-26T02:20:19 ICT" name="Default suite" finished-at="2024-06-26T02:20:28 ICT" duration-ms="8574">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@205d38da]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@27912e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-18T18:25:43 ICT" name="Default test" finished-at="2023-08-18T18:30:43 ICT" duration-ms="300441">
+    <test started-at="2024-06-26T02:20:19 ICT" name="Default test" finished-at="2024-06-26T02:20:28 ICT" duration-ms="8574">
       <class name="runner.CucumberTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberTestRunner@205d38da]" started-at="2023-08-18T18:25:43 ICT" name="setUpClass" finished-at="2023-08-18T18:25:43 ICT" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberTestRunner@27912e3]" started-at="2024-06-26T02:20:19 ICT" name="setUpClass" finished-at="2024-06-26T02:20:20 ICT" duration-ms="402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@298cfe89]]>
+                <![CDATA[org.testng.TestRunner@7a65c995]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@205d38da]" started-at="2023-08-18T18:25:43 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T18:30:43 ICT" duration-ms="299897" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberTestRunner@27912e3]" started-at="2024-06-26T02:20:20 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T02:20:27 ICT" duration-ms="7903" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["01 Flow Buy Product"]]>
+                <![CDATA["Test login web facebook"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[01 Flow Buy Product]"]]>
+                <![CDATA["Optional[Test]"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Chờ lấy hàng # Đang lấy hàng]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Thangs-MBP', ip: '2001:ee0:2c9:950c:2bf:8f17:6dc0:3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, goog:loggingPrefs: org.openqa.selenium.logging...}], desiredCapabilities=Capabilities {acceptSslCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, loggingPrefs: org.openqa.selenium.logging...}}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Chờ lấy hàng # Đang lấy hàng
-at org.testng.Assert.fail(Assert.java:99)
-at utilities.CommonFunctions.verifyDataEquals(CommonFunctions.java:456)
-at actions.Internal_WMSActions.verifyStatusChange(Internal_WMSActions.java:773)
-at stepdefinitions.Internal_WMSPageSteps.i_should_see_status_change_on_the_internal_detail_ticket_wms_page(Internal_WMSPageSteps.java:133)
-at ✽.I should see status change "Đang lấy hàng" on the Internal Detail Ticket WMS page(file:///D:/buymed-automation-project-thang/src/test/resources/features/regression/01_FlowBuyProduct.feature:77)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Thangs-MBP', ip: '2001:ee0:2c9:950c:2bf:8f17:6dc0:3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, goog:loggingPrefs: org.openqa.selenium.logging...}], desiredCapabilities=Capabilities {acceptSslCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, loggingPrefs: org.openqa.selenium.logging...}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:80)
+at base.TestBase.setUpDriver(TestBase.java:152)
+at base.TestBase.setUp(TestBase.java:42)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberTestRunner@205d38da]" started-at="2023-08-18T18:30:43 ICT" name="tearDownClass" finished-at="2023-08-18T18:30:43 ICT" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberTestRunner@27912e3]" started-at="2024-06-26T02:20:27 ICT" name="tearDownClass" finished-at="2024-06-26T02:20:28 ICT" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

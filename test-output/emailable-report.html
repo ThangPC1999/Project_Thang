@@ -9,16 +9,31 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">300,441</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,574</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.CucumberTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1692357943366</td><td rowspan="1">299897</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.CucumberTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1719343220008</td><td rowspan="1">7903</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">runner.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;01 Flow Buy Product&quot;</td><td>&quot;Optional[01 Flow Buy Product]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Chờ lấy hàng # Đang lấy hàng
-	at org.testng.Assert.fail(Assert.java:99)
-	at utilities.CommonFunctions.verifyDataEquals(CommonFunctions.java:456)
-	at actions.Internal_WMSActions.verifyStatusChange(Internal_WMSActions.java:773)
-	at stepdefinitions.Internal_WMSPageSteps.i_should_see_status_change_on_the_internal_detail_ticket_wms_page(Internal_WMSPageSteps.java:133)
-	at ✽.I should see status change &quot;Đang lấy hàng&quot; on the Internal Detail Ticket WMS page(file:///D:/buymed-automation-project-thang/src/test/resources/features/regression/01_FlowBuyProduct.feature:77)
+<h2>Default test</h2><h3 id="m0">runner.CucumberTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test login web facebook&quot;</td><td>&quot;Optional[Test]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 126.0.6478.127 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Thangs-MBP&apos;, ip: &apos;2001:ee0:2c9:950c:2bf:8f17:6dc0:3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, goog:loggingPrefs: org.openqa.selenium.logging...}], desiredCapabilities=Capabilities {acceptSslCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --disable-web-security, --no-proxy-server, test-type, disable-popup-blocking, --use-fake-ui-for-media-stream, --disable-notifications, --remote-debugging-port=9222, --remote-allow-origins=*], excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, profile.password_manager_enabled: false}, useAutomationExtension: false}, loggingPrefs: org.openqa.selenium.logging...}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:80)
+	at base.TestBase.setUpDriver(TestBase.java:152)
+	at base.TestBase.setUp(TestBase.java:42)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
