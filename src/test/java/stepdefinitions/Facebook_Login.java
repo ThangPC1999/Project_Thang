@@ -41,13 +41,7 @@ public class Facebook_Login {
 	    // Write code here that turns the phrase above into concrete actions
 		Facebook_Actions.getInstance().successMgs();
 	    throw new io.cucumber.java.PendingException();
-	    //update code
+	  
 	}
-	/*@Then("I should see message login success on the Facebook page")
-	public void i_should_see_message_login_success_on_the_facebook_page() {
-	    // Write code here that turns the phrase above into concrete actions
-		Facebook_Actions.getInstance().successMgs();
-	    throw new io.cucumber.java.PendingException();
-	    //update code 1 */ 
-
+	
 }
