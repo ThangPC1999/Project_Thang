@@ -48,6 +48,6 @@ public class Facebook_Login {
 	    // Write code here that turns the phrase above into concrete actions
 		Facebook_Actions.getInstance().successMgs();
 	    throw new io.cucumber.java.PendingException();
-	    //update code */
+	    //update code 1 */ 
 
 }
